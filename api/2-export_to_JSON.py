@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This Python script to export data in the CSV format."""
+"""This Python script to export data in the JSON format."""
 import json
 import requests
 from sys import argv
