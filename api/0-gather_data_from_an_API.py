@@ -18,8 +18,9 @@ if __name__ == "__main__":
         if all['userId'] == id and all['completed'] is True:
             task_done += 1
     EMPLOYEE_NAME = req_users['name']
-    print(
-        f"Employee {EMPLOYEE_NAME} is done with tasks({task_done}/{task_count}):")
+    txt = "Employee {} is done with tasks({}/{}):".format(
+        EMPLOYEE_NAME, task_done, task_count)
+    print(txt)
     for all in req_all:
         if all['userId'] == id and all['completed'] is True:
             print(f"\t {all['title']}")
